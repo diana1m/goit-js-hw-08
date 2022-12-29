@@ -18,7 +18,6 @@ player.setCurrentTime(currentTime).then(function(seconds) {
 }).catch(function(error) {
     switch (error.name) {
         case 'RangeError':
-            // the time was less than 0 or greater than the video’s duration
             seconds < 0 || seconds > 571.52;
             break;
 
