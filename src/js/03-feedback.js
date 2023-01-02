@@ -36,11 +36,13 @@ if (userInfoLocalStorage){
     textarea.value = userInfoLocalStorage.message;
 }
 
+const saveUserInfo = userInfoLocalStorage;
+
 form.addEventListener("submit", onSubmit);
 
 function onSubmit(evn){
     evn.preventDefault();
-    console.log(userInfoLocalStorage);
+    console.log(saveUserInfo);
     localStorage.clear();
     input.value = "";
     textarea.value = "";
